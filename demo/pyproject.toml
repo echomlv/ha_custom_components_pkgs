@@ -1,0 +1,32 @@
+# pyproject.toml
+
+[build-system]
+# Home Assistant 推荐使用 setuptools 或 flit 作为后端。我们使用 setuptools。
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+# PEP 621 - 声明您的包的元数据
+name = "awesomelights"
+version = "0.1.0" # <-- 库的版本号，与 awesomelights/__init__.py 保持一致
+description = "A simulated library for AwesomeLights Home Assistant integration."
+readme = "README.md"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"},
+]
+license = {file = "LICENSE"}
+keywords = ["homeassistant", "light", "simulation"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+# 外部库的依赖
+dependencies = [
+    # 如果您的 awesomelights 库需要其他 PyPI 包，请在此处添加
+]
+
+[tool.setuptools]
+# 告诉 setuptools 自动查找 awesomelights/ 目录作为包
+packages = ["awesomelights"]

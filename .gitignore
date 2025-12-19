@@ -1,0 +1,44 @@
+
+# pytest
+.pytest_cache
+.cache
+
+# GITHUB Proposed Python stuff:
+*.py[cod]
+__pycache__
+
+
+# Logs
+*.log
+pip-log.txt
+
+
+# venv stuff
+pyvenv.cfg
+pip-selfcheck.json
+venv
+.venv
+Pipfile*
+share/*
+/Scripts/
+
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+.eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+lib
+lib64
+pip-wheel-metadata
+
+*.o
+*.tmp
